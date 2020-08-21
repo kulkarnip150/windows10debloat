@@ -7,4 +7,9 @@
 - I am not a owner of this script
 ```
 ##
-I have changed file according to my liking for my use
+```diff
+Note from author: Never run scripts without reading them & understanding what they do.
+!I am not responsible for any damage happened due to this script
+```
+##
+I have changed file according to my liking for my use.
