@@ -1,3 +1,4 @@
+
 # windows10debloat
 
 ## Primary Author Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
@@ -12,3 +13,11 @@ Note from author: Never run scripts without reading them & understanding what th
 ```
 ##
 I have changed file according to my liking for my use.
+##
+#### Steps to use script
+open powershell as admin and run following commands
+```
+Set-ExecutionPolicy Bypass
+./myWindowsDebloat.ps1
+Set-ExecutionPolicy Restricted 
+```
