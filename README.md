@@ -21,8 +21,4 @@ Set-ExecutionPolicy Bypass
 ./myWindowsDebloat.ps1
 Set-ExecutionPolicy Restricted 
 ```
-##### Remove Cortana after running script
-```
-Get-AppxPackage -allusers Microsoft.549981C3F5F10 | Remove-AppxPackage
-```
 ### After running script reboot system
