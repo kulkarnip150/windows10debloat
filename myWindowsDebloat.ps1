@@ -59,10 +59,10 @@ $tweaks = @(
 	"DisableAutorun",               # "EnableAutorun",
 	# "DisableStorageSense",        # "EnableStorageSense",
 	# "DisableDefragmentation",     # "EnableDefragmentation",
-	"DisableSuperfetch",          # "EnableSuperfetch",
+	#"DisableSuperfetch",          "EnableSuperfetch",
 	# "DisableIndexing",            # "EnableIndexing",
 	# "SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
-	# "DisableHibernation",		# "EnableHibernation",          # 
+	# "DisableHibernation",		# "EnableHibernation",
 	# "EnableSleepButton",		# "DisableSleepButton",         
 	# "DisableSleepTimeout",        # "EnableSleepTimeout",
 	# "DisableFastStartup",         # "EnableFastStartup",
