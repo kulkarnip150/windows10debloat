@@ -59,7 +59,7 @@ $tweaks = @(
 	"DisableAutorun",               # "EnableAutorun",
 	# "DisableStorageSense",        # "EnableStorageSense",
 	# "DisableDefragmentation",     # "EnableDefragmentation",
-	#"DisableSuperfetch",          "EnableSuperfetch",
+	# "DisableSuperfetch",          # "EnableSuperfetch",
 	# "DisableIndexing",            # "EnableIndexing",
 	# "SetBIOSTimeUTC",             # "SetBIOSTimeLocal",
 	# "DisableHibernation",		# "EnableHibernation",
@@ -970,6 +970,8 @@ Function DisableSuperfetch {
 	Write-Output "Stopping and disabling Superfetch service..."
 	Stop-Service "SysMain" -WarningAction SilentlyContinue
 	Set-Service "SysMain" -StartupType Disabled
+	Stop-Service -Force -Name "SysMain"
+	Set-Service -Name "SysMain" -StartupType Disabled
 }
 
 # Start and enable Superfetch service - Not applicable to Server
