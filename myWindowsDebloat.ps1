@@ -3,7 +3,6 @@
 # Default preset
 $tweaks = @(
 # Require administrator privileges
-	# "RequireAdmin",
 
 # Windows Apps
 	"DebloatAll",
@@ -1900,6 +1899,8 @@ Function UninstallMsftBloat {
 	Get-AppxPackage -allusers Microsoft.549981C3F5F10 | Remove-AppxPackage
 	Get-AppxPackage *Microsoft.YourPhone* -AllUsers | Remove-AppxPackage
 	Get-AppxPackage *officehub* | Remove-AppxPackage
+	Get-AppxPackage *Microsoft.ScreenSketch* -AllUsers | Remove-AppxPackage
+	Get-AppxPackage Microsoft.MixedReality.Portal | Remove-AppxPackage
 }
 
 # Install default Microsoft applications
